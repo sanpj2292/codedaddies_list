@@ -44,19 +44,15 @@
                 </div>
             </div>
         </div>
-    <form action="{% url 'new_search' %}" method="post">
-        {% csrf_token %}
-        <input type="text" name="search" placeholder="Enter your searchword here.">
-       <button class="btn waves-effect waves-light" type="submit" name="submit">Submit
-            <i class="material-icons right">send</i>
-       </button>
-    </form>
-
-
+        <form action="{% url 'new_search' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="search" placeholder="Enter your searchword here.">
+           <button class="btn waves-effect waves-light" type="submit" name="submit">Submit
+                <i class="material-icons right">send</i>
+           </button>
+        </form>
         {% block content %}
-
         {% endblock content %}
-
     </div>
 
     <!-- Compiled and minified JavaScript -->
