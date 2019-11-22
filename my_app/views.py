@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
-
+from bs4 import BeautifulSoup
+import requests
 
 # Create your views here.
 
